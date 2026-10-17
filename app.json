@@ -2,6 +2,7 @@
   "expo": {
     "name": "medically",
     "slug": "medically",
+    "scheme": "medically",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,6 +21,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Medically to use your location to show how far sample clinics are."
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
